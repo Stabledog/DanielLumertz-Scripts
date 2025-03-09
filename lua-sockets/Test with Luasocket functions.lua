@@ -12,8 +12,8 @@ end
 
 local info = debug.getinfo(1, 'S');
 local script_path = info.source:match[[^@?(.*[\/])[^\/]-$]];
-package.cpath = package.cpath .. ";" .. script_path .. "/socket module/?."..extension  -- Add current folder/socket module for looking at .dll (need for loading basic luasocket)
-package.path = package.path .. ";" .. script_path .. "/socket module/?.lua" -- Add current folder/socket module for looking at .lua ( Only need for loading the other functions packages lua osc.lua, url.lua etc... You can change those files path and update this line)ssssssssssssssssssssssssssssssssssss
+package.cpath = package.cpath .. ";" .. script_path .. "/socket-module/?."..extension  -- Add current folder/socket-module for looking at .dll (need for loading basic luasocket)
+package.path = package.path .. ";" .. script_path .. "/socket-module/?.lua" -- Add current folder/socket-module for looking at .lua ( Only need for loading the other functions packages lua osc.lua, url.lua etc... You can change those files path and update this line)ssssssssssssssssssssssssssssssssssss
 
 
 function print(val)
